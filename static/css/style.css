@@ -1,0 +1,205 @@
+/* ===============================
+   GLOBAL RESET & BASE
+================================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* ===============================
+   HEADER (GOVT STYLE)
+================================ */
+.header {
+    background: #0b3c5d;   /* official navy blue */
+    color: #ffffff;
+    padding: 16px 10px;
+    text-align: center;
+    border-bottom: 3px solid #062a40;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 13px;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================ */
+.container {
+    padding: 20px;
+}
+
+/* ===============================
+   CARD LAYOUT
+================================ */
+.card {
+    background: #ffffff;
+    max-width: 430px;
+    margin: 25px auto;
+    padding: 22px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #0b3c5d;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ===============================
+   FORM ELEMENTS
+================================ */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 11px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid #bfc9d1;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0b3c5d;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+    width: 100%;
+    margin-top: 14px;
+    padding: 11px;
+    font-size: 14px;
+    background: #0b3c5d;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #092f4a;
+}
+
+/* Admin action buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 6px 4px 6px 0;
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.green {
+    background: #2e7d32;
+}
+
+.green:hover {
+    background: #256428;
+}
+
+.red {
+    background: #c62828;
+}
+
+.red:hover {
+    background: #a51f1f;
+}
+
+/* ===============================
+   VOTING OPTIONS
+================================ */
+.option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.option input {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* ===============================
+   TABLE (RESULTS)
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #e6eef4;
+    font-weight: 600;
+}
+
+td, th {
+    border: 1px solid #cfd8dc;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ===============================
+   INFO TEXT
+================================ */
+.info {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* ===============================
+   FOOTER / DISCLAIMER
+================================ */
+.footer {
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+/* ===============================
+   RESPONSIVE (MOBILE)
+================================ */
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+        padding: 18px;
+    }
+
+    .header h2 {
+        font-size: 18px;
+    }
+}

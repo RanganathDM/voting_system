@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title if title else "Organization Voting Portal" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/modern.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h2>🗳️ Organization / College Voting Portal</h2>
+    <p class="subtitle">Secure Internal Voting System</p>
+</header>
+
+<main class="container">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+    ⚠️ Disclaimer: This platform is intended only for internal voting
+    within colleges or organizations. It is not meant for public or
+    government elections.
+</footer>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>

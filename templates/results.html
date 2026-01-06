@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+    <h3>Election Results</h3>
+
+    <table>
+        <tr>
+            <th>Candidate</th>
+            <th>Votes</th>
+        </tr>
+        {% for name, count in data %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p class="info">
+        Voter Turnout: <b>{{ turnout }}</b> out of <b>{{ total }}</b>
+    </p>
+</div>
+
+{% endblock %}

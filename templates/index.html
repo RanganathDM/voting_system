@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/modern.css') }}">
+{% extends "base.html" %}
+{% block content %}
+
+<div class="card">
+    <h3>Voter Verification</h3>
+    <p>Please enter your registered Member / Student ID</p>
+
+    <form method="POST" action="/verify">
+        <input type="text" name="voter" placeholder="Enter Member ID" required>
+        <button type="submit">Verify</button>
+    </form>
+</div>
+
+{% endblock %}
